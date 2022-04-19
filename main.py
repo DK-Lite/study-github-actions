@@ -8,7 +8,7 @@ from datetime import date
 
 def main():
     access_key = os.environ['MY_GITHUB_TOKEN']
-    repo = github(access_key)
+    repo = github(access_key, 'study-github-actions')
     push_issue(repo, 'a', date.today())
 
 
